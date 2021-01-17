@@ -7,28 +7,86 @@ body {
     color: #4a4a4a;
     font-family: Nunito;
     background-color: #fafafa;
+    text-align: center;
+    padding: 0 1em 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.3em;
 }
 
 h1 {
+    font-size: 2em;
     font-weight: 800;
 }
 
-.main-nav,
-.main-nav a  {
-    text-decoration: none;
-    font-size: 1.05em;
+h3 {
+    font-size: 1em;
     font-weight: 900;
-    color: #4a4a4a;
-    list-style-type: none;
-    text-transform: uppercase;
-}
-
-.main-nav a {
-    border: 2px solid aquamarine;
-    padding: 5px;
-    background-color: white;
 }
 
 
 /* :::BASE LAYOUT STYLES::: */
+.container {
+    /* width: 95%; */
+    margin: 0 auto;
+}
+
+.main-nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-nav a {
+    font-weight: 900;
+    font-size: 1em;
+    text-decoration: none;
+    color: #4a4a4a;
+    text-transform: uppercase;
+}
+
+.main-nav li {
+    background-color: white;
+    padding: 12px 0 12px;
+    margin-bottom: 3px;
+}
+
+.logo,
+.main-nav li {
+    text-align: center;
+}
+/* :::BASE LAYOUT STYLES: intor section::: */
+.intro-section {
+    padding-top: 20px;
+}
+
+.intro-section img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border: 2px solid red;
+}
+/* :::BASE LAYOUT STYLES: marketing page showcase::: */
+
+.portfolio-section {
+    background-color: white;
+}
+
+.portfolio-section h3 {
+    padding: 2em;
+}
+
+.marketing-page-showcase {
+    background-color: white;
+    padding-bottom: 1em;
+}
+
+.portfolio-image {
+    width: 100%;
+}
+
+.marketing-page-showcase p {
+    padding: 0 1em;
+}
 /* :::MEDIA QUERIES::: */
