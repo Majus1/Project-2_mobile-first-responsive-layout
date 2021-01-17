@@ -12,20 +12,19 @@ body {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.3em;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 800;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 0.8rem;
     font-weight: 900;
 }
-
 
 /* :::BASE LAYOUT STYLES::: */
 .container {
@@ -46,26 +45,22 @@ h3 {
     text-transform: uppercase;
 }
 
-.main-nav li {
-    background-color: white;
-    padding: 12px 0 12px;
-    margin-bottom: 3px;
-}
-
 .logo,
 .main-nav li {
     text-align: center;
 }
+
+.portfolio-image {
+    width: 100%;
+}
 /* :::BASE LAYOUT STYLES: intor section::: */
 .intro-section {
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.intro-section img {
-    display: block;
-    margin: 0 auto;
+.profile-photo {
     width: 70%;
-    border: 2px solid red;
 }
 /* :::BASE LAYOUT STYLES: marketing page showcase::: */
 
@@ -74,7 +69,7 @@ h3 {
 }
 
 .portfolio-section h3 {
-    padding: 2em;
+    padding: 32px;
 }
 
 .marketing-page-showcase {
@@ -82,11 +77,210 @@ h3 {
     padding-bottom: 1em;
 }
 
-.portfolio-image {
-    width: 100%;
-}
-
 .marketing-page-showcase p {
     padding: 0 1em;
 }
+
+.marketing-page-showcase h2 {
+    font-size: 1.25em;
+}
+
+/* :::BASE LAYOUT STYLES: search page showcase::: */
+
+.search-page-showcase {
+    background-color: white;
+    padding-bottom: 1em;
+}
+
+.search-page-showcase p {
+    padding: 0 1em;
+}
+
+.search-page-showcase h2 {
+    font-size: 1.25em;
+}
+
+/* :::BASE LAYOUT STYLES: travel app showcase::: */
+
+.travel-app-showcase {
+    background-color: white;
+    padding-bottom: 1em;
+}
+
+.travel-app-showcase p {
+    padding: 0 1em;
+}
+
+.travel-app-showcase h2 {
+    font-size: 1.25em;
+}
+/* :::BASE LAYOUT STYLES: travel map showcase::: */
+
+.map-of-favorite-spots-showcase {
+    background-color: white;
+    padding-bottom: 1em;
+}
+
+.map-of-favorite-spots-showcase p {
+    padding: 0 1em;
+}
+
+.map-of-favorite-spots-showcase h2 {
+    font-size: 1.25em;
+}
+/* :::BASE LAYOUT STYLES: photo gallery showcase::: */
+
+.photo-gallery-showcase {
+    background-color: white;
+    padding-bottom: 1em;
+}
+
+.photo-gallery-showcase p {
+    padding: 0 1em;
+}
+
+.photo-gallery-showcase h2 {
+    font-size: 1.25em;
+}
+/* :::BASE LAYOUT STYLES: Portfolio image showcase::: */
+
+.cauculator-app-showcase {
+    background-color: white;
+    padding-bottom: 1em;
+}
+
+.cauculator-app-showcase p {
+    padding: 0 1em;
+}
+
+.cauculator-app-showcase h2 {
+    font-size: 1.25em;
+}
+/* :::BASE LAYOUT STYLES: footer::: */
+
+footer h3 {
+    padding: 3em 0 32px;
+}
+.contact-details {
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+.student-name {
+    font-size: 0.8em;
+    font-weight: 900;
+}
+
+.back-to-top {
+    font-size: 0.8em;
+    font-weight: 900;
+}
+/* :::FLOATED ELEMENTS::: */
+.student-name {
+    float: left;
+}
+.back-to-top {
+    float: right;
+}
+
+
+.cf::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 /* :::MEDIA QUERIES::: */
+@media (min-width: 320px) and (max-width:767px) {
+
+
+    .main-nav li {
+        background-color: white;
+        padding: 12px 0 12px;
+        margin-bottom: 3px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .main-header {
+        padding-top: 32px;
+    }
+    .main-nav {
+        list-style-type: none;
+        padding: 0.32px 0 0 0;
+    }
+    .main-nav a {
+        font-weight: 900;
+        font-size: 1em;
+        text-decoration: none;
+        color: #4a4a4a;
+        text-transform: uppercase;
+    }
+    .main-nav li {
+        padding: 12px 1.5em 12px;
+        margin-bottom: 3px;
+        display: inline;
+    }
+    main {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .portfolio-section {
+        background-color: white;
+    }
+    footer {
+        padding-top: 1em;
+        width: 85%;
+        font-size: 1.45em;
+        margin: 0 auto;
+    }
+    .contact-details {
+        padding: 0.8em 0 0.8em;
+    }
+        /* :::FLOATED ELEMENTS::: */
+        .profile-photo {
+            display: block;
+            float: right;
+            width: 40%;
+        }
+        .intro-section p {
+            text-align: left;
+            float: left;
+            width: 60%;
+            font-size: 1.45em;
+            margin: 0;
+            padding-right:10px;
+        }
+        .marketing-page-showcase {
+            float: left;
+            width: 50%;
+            padding-right: 5px;
+        }
+        .search-page-showcase {
+            float: right;
+            width: 50%;
+            padding-left: 5px;
+        }
+        .travel-app-showcase {
+            float: left;
+            width: 50%;
+            padding-right: 5px;
+        }
+        .map-of-favorite-spots-showcase {
+            float: right;
+            width: 50%;
+            padding-left: 5px;
+        }
+        .photo-gallery-showcase {
+            float: left;
+            width: 50%;
+            padding-right: 5px;
+        }
+        .cauculator-app-showcase {
+            float: right;
+            width: 50%;
+            padding-left: 5px;
+        }
+        /* :::FLOATED ELEMENTS::: */    
+
+}
