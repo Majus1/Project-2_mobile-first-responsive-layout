@@ -68,6 +68,9 @@ h3 {
 }
 a:link {
     color: #4a4a4a; 
+}   
+.interest-icons {
+    padding: 2em 0;
 }
 /* :::BASE LAYOUT STYLES::: */
 /* :::BASE LAYOUT STYLES: intor section::: */
@@ -86,6 +89,7 @@ a:link {
 
 .portfolio-section h3 {
     padding: 32px;
+    text-transform: uppercase;
 }
 
 /* :::BASE LAYOUT STYLES: intor section::: */
