@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-    <header class="main-header">
-        <h1 class="logo">Student name</h1>
+    <header class="main-header cf">
+        <h1 class="logo" id="home">Maj Gajšek</h1>
         <div class="container">
             <ul class="main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
     <main>
         <div class="intro-section cf">
             <img src="images/responsive-layout-profile.png" alt="profile-image" class="profile-photo">
-            <p> Hi i`m a fornt-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am exited to put all my skills to use!</p>
+            <p> Grafični oblikovalec z zanimanjem za digitalne platforme in web design, ki prihaja iz analognega sveta tiskanih medijev. Pripravljen sem sodelovati s start up in velikimi podjetji, katerim želim nuditi moje izkušnje in znanje iz področja web in print designa. </p>
         </div>
         <div class="portfolio-section cf">
-            <h3>PORTFOLIO</h3>
+            <h3 id="portfolio">PORTFOLIO</h3>
             <div class="marketing-page-showcase">
                 <img src="images/portfolio-1.png" alt="represetation-of-marketing-page" class="portfolio-image">
                 <h2>Marketing Page</h2>
@@ -58,15 +58,26 @@
         </div>
     </main>
     <footer class="cf">
-        <h3>CONTACT</h3>
+        <h3 id="contact">CONTACT</h3>
         <p>If you`re interested in chatting or want more information about what I`ve been working on, I`d love to hear from you!</p>
         <div class="contact-details">
             <p>Phone <b>+1 (111) 555-1234</b></p>
             <p>Email <b>email@yoursite.com</b></p>
         </div>
-        <hr>
-        <p class="student-name"><b>Student name</b></p>
-        <p class="back-to-top"><b>BACK TO TOP</b></p>
+        <div class="mobile-footer-nav">
+            <hr>
+            <p class="student-name"><b>Gajšek Maj</b></p>
+            <p class="back-to-top"><b>BACK TO TOP</b></p>
+        </div>
+        <div class="tablet-desktop-footer cf">
+            <hr>
+            <h1 class="logo">Gajšek Maj</h1>
+            <nav class="footer-nav">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </nav>
+        </div>
     </footer>
     
 </body>
