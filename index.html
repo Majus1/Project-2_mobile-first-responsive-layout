@@ -7,6 +7,9 @@
     <title>Project 2 mobile first responsive layout</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <style>
+    @font-face { font-family: Oswald; src: url(Fonts/Oswald-VariableFont_wght.ttf); }
+    </style>
 </head>
 <body>
     <header class="main-header cf">
@@ -16,6 +19,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
             </ul>
         </div>
     </header>
@@ -57,9 +61,11 @@
                 <p>Someone can enter in the numbers they want, and press the big blue button and get the results.</p>
             </div>
         </div>
-        <div class="portfolio-section">
+        <div class="portfolio-section" id="hobbies">
             <h3>Hobiji in interesi</h3>
-            <span class="interest-icons"><i class="fa fa-heartbeat" style="font-size: 1.5em;"></i></span><h2 style="display: inline;">  Sports</h2>
+            <span class="interest-icons"><i class="fa fa-heartbeat" style="font-size: 1.5em; margin-right: 12px;"></i></span><h2 class="hobi-text" style="display: inline-block;">  Sports</h2><br><br>
+            <span class="interest-icons"><i class="fa fa-coffee" style="font-size: 1.5em; margin-right: 12px;"></i></span><h2 class="hobi-text" style="display: inline-block;"> Coffee</h2><br><br>
+            <span class="interest-icons"><i class="fa fa-bullhorn" style="font-size: 1.5em; margin-right: 12px;"></i></span><h2 class="hobi-text" style="display: inline-block;">  JAZZ</h2><br><br><br>
         </div>
     </main>
     <footer class="cf">
@@ -71,8 +77,8 @@
         </div>
         <div class="mobile-footer-nav">
             <hr>
-            <p class="student-name"><b>Gajšek Maj</b></p>
-            <p class="back-to-top"><b>BACK TO TOP</b></p>
+            <p class="student-name"><b><a href="index.html">Gajšek Maj</a></b></p>
+            <p class="back-to-top"><b><a href="#home">BACK TO TOP</a></b></p>
         </div>
         <div class="tablet-desktop-footer cf">
             <hr>
@@ -81,6 +87,7 @@
                 <li><a href="#top">Home</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
             </ul>
         </div>
     </footer>
