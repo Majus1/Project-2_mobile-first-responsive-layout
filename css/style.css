@@ -75,7 +75,9 @@ a:link {
 }   
 .interest-icons {
     padding: 2em 0;
-    color: white;
+}
+.tablet-desktop-footer {
+    display: none;
 }
 /* :::BASE LAYOUT STYLES::: */
 /* :::BASE LAYOUT STYLES: id selectors::: */
@@ -84,7 +86,8 @@ a:link {
     background-size: cover;
     background-position: top;
     color: white;
-    font-family: Oswald;
+    font-family: 'GFS Didot', serif;
+    text-transform: uppercase;
 }
 /* :::BASE LAYOUT STYLES: id selectors::: */
 /* :::BASE LAYOUT STYLES: intor section::: */
@@ -243,8 +246,14 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+    .main-nav li {
+        background-color: rgba(0, 0, 0, 0);
+    }
     .mobile-footer-nav {
         display: none;
+    }
+    .tablet-desktop-footer {
+        display: block;
     }
     .tablet-desktop-footer .logo {
         font-size: 1rem;
